@@ -292,7 +292,8 @@ function MainPage() {
     <div className="App">
       <ConnectBar isConnected={conn}/>
 
-       
+      <Signature isConnected={conn}/>
+      
       <div className="btn_container">
         <div className='metamask_btn' onClick={handleMetamaskClick}>
           <img src="./metamask_logo.png" className='metamask_img' alt="metamask logo"/>
