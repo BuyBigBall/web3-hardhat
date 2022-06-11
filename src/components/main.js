@@ -11,6 +11,7 @@ import { ethers } from 'ethers';
 import SpaceWormsAbi from '../contracts/SpaceWorms.json';
 //import {fs} from "fs";
 import addresses from '../contracts/contract-address.json';
+// import Signature from './signature.js';
 
 const ipfsClient = require('ipfs-http-client');
 const ipfs = ipfsClient.create({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' });
@@ -292,7 +293,7 @@ function MainPage() {
     <div className="App">
       <ConnectBar isConnected={conn}/>
 
-      <Signature isConnected={conn}/>
+       {/* < S i g n ature isConnected=conn } / > */}
       
       <div className="btn_container">
         <div className='metamask_btn' onClick={handleMetamaskClick}>

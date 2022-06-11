@@ -1,20 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { useWeb3React } from '@web3-react/core';
-import { injected } from './connectors';
-import Swal from 'sweetalert2';
-import ERC20ABI from '../abi/ERC20.abi.json';
-import { Contract } from '@ethersproject/contracts';
-import { BigNumber } from '@ethersproject/bignumber';
-import { parseEther } from '@ethersproject/units';
-import { ethers } from 'ethers';
-import SpaceWormsAbi from '../contracts/SpaceWorms.json';
-//import {fs} from "fs";
-import addresses from '../contracts/contract-address.json';
+// import { injected } from './connectors';
+// import Swal from 'sweetalert2';
+// import ERC20ABI from '../abi/ERC20.abi.json';
+// import { Contract } from '@ethersproject/contracts';
+// import { BigNumber } from '@ethersproject/bignumber';
+// import { parseEther } from '@ethersproject/units';
+// import { ethers } from 'ethers';
+// import SpaceWormsAbi from '../contracts/SpaceWorms.json';
+// //import {fs} from "fs";
+// import addresses from '../contracts/contract-address.json';
 
 const Signature  = props => {
 
     async function signMessage() {
+        // if(typeof web3 !== 'undefined'){
+        //     web3 = new Web3(web3.currentProvider); //this is where it errors
+        // }else {
+        //     web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545")); 
+        // }
 
+
+        //Web3 = require('web3');
         const { active, account, library, activate } = useWeb3React();
         if (!window.ethereum) return alert("Please Install Metamask");
     
